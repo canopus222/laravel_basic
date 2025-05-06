@@ -10,7 +10,7 @@ class ShopController extends Controller
 {
     public function index()
     {
-        // 1対多 主->従
+        // 1対多 親->従
         $shops = Area::find(1)->shops;
         // 主 <- 従
         $area = Shop::find(3)->area;
